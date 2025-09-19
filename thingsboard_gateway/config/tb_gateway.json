@@ -1,7 +1,7 @@
 {
   "thingsboard": {
-    "host": "thingsboard.cloud",
-    "port": 1883,
+    "host": "10.0.5.73",
+    "port": 40403,
     "remoteShell": false,
     "remoteConfiguration": true,
     "latencyDebugMode": false,
@@ -21,7 +21,7 @@
     "handleDeviceRenaming": true,
     "security": {
       "type": "accessToken",
-      "accessToken": "YOUR_ACCESS_TOKEN"
+      "accessToken": "SQpk0tlFW7llNzZP6jtH"
     },
     "qos": 1,
     "reportStrategy": {
@@ -61,5 +61,14 @@
     "minTimeBetweenPingsMs": 10000,
     "minPingIntervalWithoutDataMs": 5000
   },
-  "connectors": []
+  "connectors": [
+        {
+      "name": "My Custom Connector Instance",
+      "type": "iec104",
+      "configuration": "my_custom_connector.json",
+          "class": "iecConnector"
+
+    }
+
+  ]
 }

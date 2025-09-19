@@ -142,7 +142,7 @@
     }
   },
   "root": {
-    "level": "ERROR",
+    "level": "INFO",
     "handlers": [
       "consoleHandler"
     ]
